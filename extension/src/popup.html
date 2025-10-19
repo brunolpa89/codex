@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monster Scraper</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Monster Scraper</h1>
+      <p class="subtitle">Scan, scroll, and conquer complex pages.</p>
+    </header>
+    <main>
+      <section class="controls">
+        <button id="scanBtn">Scan Page</button>
+        <button id="autoScrollBtn">Auto Scroll</button>
+        <button id="nextBtn">Find Next / Load More</button>
+      </section>
+      <section class="datasets">
+        <h2>Detected Data Sets</h2>
+        <select id="datasetSelect"></select>
+        <div id="datasetMeta"></div>
+        <div id="headerEditor"></div>
+        <div class="copy-controls">
+          <button id="copyCsvBtn">Copy CSV</button>
+          <button id="copyJsonBtn">Copy JSON</button>
+        </div>
+        <div id="preview"></div>
+      </section>
+      <section class="gpt-assist">
+        <h2>AI Assist</h2>
+        <p>Stuck? Ask GPT-4.1 mini to figure out the best scraping move.</p>
+        <textarea id="gptGoal" rows="3" placeholder="Describe what you need (e.g., 'grab the pricing table')."></textarea>
+        <div class="gpt-actions">
+          <button id="gptAssistBtn">AI Select Content</button>
+          <span class="hint"><a href="#" id="openOptions">Set API key</a></span>
+        </div>
+        <pre id="gptOutput"></pre>
+      </section>
+    </main>
+    <footer>
+      <span id="status"></span>
+    </footer>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

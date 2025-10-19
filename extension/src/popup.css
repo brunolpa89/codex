@@ -1,0 +1,186 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0f172a;
+  --fg: #f8fafc;
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --muted: #94a3b8;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  background: linear-gradient(135deg, rgba(14, 23, 42, 0.95), rgba(30, 64, 175, 0.9));
+  color: var(--fg);
+}
+
+header {
+  padding: 16px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0 0 4px;
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+main {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+section {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.35);
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1 1 auto;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  color: #0f172a;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(56, 189, 248, 0.35);
+  background: var(--accent-strong);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.datasets h2,
+.gpt-assist h2 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+#datasetSelect {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--fg);
+}
+
+#datasetMeta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+#headerEditor {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.header-input {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.header-input input {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(15, 23, 42, 0.7);
+  color: var(--fg);
+}
+
+.copy-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+#preview {
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  background: rgba(15, 23, 42, 0.7);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.gpt-assist textarea {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(15, 23, 42, 0.7);
+  color: var(--fg);
+  padding: 6px 8px;
+  resize: vertical;
+}
+
+.gpt-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.gpt-actions .hint a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#gptOutput {
+  margin-top: 8px;
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 6px;
+  padding: 8px;
+  max-height: 150px;
+  overflow: auto;
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+}
+
+footer {
+  padding: 10px 16px 16px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+#status.success {
+  color: #4ade80;
+}
+
+#status.error {
+  color: #f87171;
+}

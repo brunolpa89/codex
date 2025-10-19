@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monster Scraper Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Monster Scraper Settings</h1>
+      <section>
+        <h2>OpenAI API Key</h2>
+        <p>
+          Store your OpenAI API key to unlock GPT-4.1 mini assistance. Keys are saved securely in Chrome sync storage.
+        </p>
+        <input id="apiKey" type="password" placeholder="sk-..." autocomplete="off" />
+        <div class="actions">
+          <button id="saveKey">Save Key</button>
+          <button id="clearKey" class="secondary">Clear</button>
+        </div>
+        <p id="status" role="status"></p>
+      </section>
+    </main>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
