@@ -1,0 +1,91 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', system-ui, sans-serif;
+  --bg: #0f172a;
+  --panel: rgba(15, 23, 42, 0.75);
+  --fg: #f8fafc;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(14, 23, 42, 1), rgba(30, 64, 175, 0.85));
+  color: var(--fg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+main {
+  width: min(640px, 100%);
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.45);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+section {
+  margin-top: 16px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--fg);
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  flex: 0 0 auto;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--accent);
+  color: #0f172a;
+}
+
+button.secondary {
+  background: rgba(148, 163, 184, 0.2);
+  color: var(--fg);
+}
+
+#status {
+  margin-top: 10px;
+  min-height: 1em;
+}
+
+#status.success {
+  color: #4ade80;
+}
+
+#status.error {
+  color: #f87171;
+}
