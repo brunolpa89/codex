@@ -1,0 +1,136 @@
+body.schedule {
+    background: linear-gradient(180deg, #f8faff 0%, #ffffff 55%);
+}
+
+.schedule__main {
+    padding: 6rem 0 4rem;
+}
+
+.schedule__card {
+    background: #ffffff;
+    border-radius: 1.8rem;
+    padding: clamp(2rem, 4vw, 3rem);
+    box-shadow: 0 32px 60px rgba(18, 43, 94, 0.12);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.schedule__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: rgba(56, 105, 255, 0.12);
+    color: #2446b6;
+    margin-bottom: 1rem;
+}
+
+.schedule__card h1 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: clamp(2rem, 3vw, 2.4rem);
+}
+
+.schedule__intro {
+    color: #62748a;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.schedule__summary {
+    display: grid;
+    gap: 1rem;
+    margin: 0 0 2.5rem;
+}
+
+.schedule__summary div {
+    padding: 1.2rem 1.4rem;
+    background: rgba(56, 105, 255, 0.06);
+    border-radius: 1rem;
+}
+
+.schedule__summary dt {
+    font-weight: 600;
+    color: #1f2933;
+    margin-bottom: 0.35rem;
+}
+
+.schedule__summary dd {
+    margin: 0;
+    color: #3f4c5f;
+}
+
+.schedule__form {
+    display: grid;
+    gap: 1rem;
+}
+
+.schedule__form input,
+.schedule__form textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 0.9rem;
+    border: 1px solid rgba(31, 41, 51, 0.12);
+    font: inherit;
+    resize: vertical;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.schedule__form input:focus,
+.schedule__form textarea:focus {
+    border-color: #3869ff;
+    box-shadow: 0 0 0 3px rgba(56, 105, 255, 0.18);
+    outline: none;
+}
+
+.schedule__footnote {
+    color: #62748a;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.schedule__back {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2446b6;
+    font-weight: 600;
+}
+
+.schedule__back:hover,
+.schedule__back:focus {
+    color: #3869ff;
+}
+
+@media (max-width: 640px) {
+    .schedule__card {
+        padding: 1.8rem;
+    }
+}
+
+.schedule__confirmation {
+    text-align: center;
+    padding: clamp(2rem, 4vw, 3rem);
+}
+
+.schedule__confirmation h2 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    margin-top: 0;
+}
+
+.schedule__confirmation p {
+    color: #3f4c5f;
+    font-size: 1rem;
+}
+
+.schedule__confirmation a {
+    color: #2446b6;
+    font-weight: 600;
+}
+
+.schedule__confirmation a:hover,
+.schedule__confirmation a:focus {
+    color: #3869ff;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação do pedido | Casa Clara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/schedule.css">
+</head>
+<body class="schedule">
+    <header class="topbar">
+        <div class="container topbar__content">
+            <div class="brand">Casa Clara</div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+                <span class="sr-only">Abrir menu de navegação</span>
+                <span class="nav-toggle__icon" aria-hidden="true"></span>
+            </button>
+            <nav class="nav" id="primary-nav">
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#como-funciona">Como funciona</a>
+                <a href="index.html#depoimentos">Depoimentos</a>
+                <a href="index.html#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="schedule__main">
+        <div class="container">
+            <div class="schedule__card">
+                <span class="schedule__badge">Resumo do pedido</span>
+                <h1>Revise os detalhes da sua limpeza</h1>
+                <p class="schedule__intro">Confira as informações abaixo. Em seguida nossa equipe confirmará a disponibilidade e enviará todos os detalhes por e-mail.</p>
+
+                <dl class="schedule__summary">
+                    <div>
+                        <dt>Serviço escolhido</dt>
+                        <dd id="summary-service">—</dd>
+                    </div>
+                    <div>
+                        <dt>Data selecionada</dt>
+                        <dd id="summary-date">—</dd>
+                    </div>
+                    <div>
+                        <dt>Horários</dt>
+                        <dd id="summary-times">—</dd>
+                    </div>
+                </dl>
+
+                <form class="schedule__form" id="confirm-form">
+                    <label for="client-name">Nome completo</label>
+                    <input type="text" id="client-name" name="client-name" placeholder="Como devemos te chamar?" required>
+
+                    <label for="client-email">E-mail</label>
+                    <input type="email" id="client-email" name="client-email" placeholder="email@exemplo.com" required>
+
+                    <label for="client-phone">Telefone</label>
+                    <input type="tel" id="client-phone" name="client-phone" placeholder="(11) 90000-0000" required>
+
+                    <label for="extra-notes">Observações</label>
+                    <textarea id="extra-notes" name="extra-notes" rows="4" placeholder="Conte mais detalhes sobre pets, preferências ou pontos de atenção."></textarea>
+
+                    <button type="submit" class="button button--primary">Confirmar pedido</button>
+                </form>
+
+                <p class="schedule__footnote">Ao confirmar o pedido você concorda com nossa <a href="#">política de privacidade</a>.</p>
+                <a href="index.html" class="schedule__back">&larr; Voltar para a página inicial</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p>&copy; <span id="year"></span> Casa Clara Serviços de Limpeza. Todos os direitos reservados.</p>
+            <div class="footer__links">
+                <a href="index.html#inicio">Início</a>
+                <a href="index.html#servicos">Serviços</a>
+                <a href="index.html#contato">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/schedule.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Clara - Limpeza Profissional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar__content">
+            <div class="brand">Casa Clara</div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+                <span class="sr-only">Abrir menu de navegação</span>
+                <span class="nav-toggle__icon" aria-hidden="true"></span>
+            </button>
+            <nav class="nav" id="primary-nav">
+                <a href="#servicos">Serviços</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero__content">
+                <div class="hero__text">
+                    <span class="hero__badge">Limpeza confiável em poucos cliques</span>
+                    <h1>Seu lar impecável com profissionais de confiança</h1>
+                    <p>Escolha o serviço ideal, selecione a data e o horário e deixe que a nossa equipe cuida de todo o resto.</p>
+                    <ul class="hero__benefits">
+                        <li>Profissionais verificados e treinados</li>
+                        <li>Produtos ecológicos inclusos</li>
+                        <li>Atendimento em toda a cidade</li>
+                    </ul>
+                </div>
+                <div class="hero__form-card" aria-labelledby="agende-limpeza">
+                    <h2 id="agende-limpeza">Agende sua limpeza</h2>
+                    <form id="booking-form" class="hero__form">
+                        <label for="service">Tipo de serviço</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="Limpeza básica">Limpeza básica</option>
+                            <option value="Limpeza completa">Limpeza completa</option>
+                            <option value="Limpeza pós-obra">Limpeza pós-obra</option>
+                            <option value="Passadoria e organização">Passadoria e organização</option>
+                        </select>
+
+                        <label for="service-date">Data</label>
+                        <input type="date" id="service-date" name="date" required min="">
+
+                        <label for="service-time">Horários disponíveis</label>
+                        <select id="service-time" name="times" multiple required aria-describedby="times-help">
+                        </select>
+                        <small id="times-help" class="helper-text">Segure CTRL (ou ⌘ no Mac) para selecionar mais de um horário.</small>
+
+                        <button type="submit" class="button button--primary">Ver disponibilidade</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="servicos">
+            <div class="container">
+                <h2 class="section__title">Serviços sob medida para você</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Limpeza recorrente</h3>
+                        <p>Planos semanais ou quinzenais com os mesmos profissionais para manter o seu lar sempre em ordem.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Limpeza pesada</h3>
+                        <p>Faxina detalhada para tirar manchas, limpar janelas e deixar cada cantinho brilhando.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Pós-obra</h3>
+                        <p>Equipe especializada para remoção de resíduos de obras com todo o cuidado para não danificar o ambiente.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="como-funciona">
+            <div class="container steps">
+                <div class="steps__text">
+                    <h2 class="section__title">Como funciona</h2>
+                    <p>Em quatro etapas simples você garante uma limpeza profissional com total transparência e segurança.</p>
+                </div>
+                <ol class="steps__list">
+                    <li>
+                        <span class="steps__number">1</span>
+                        <div>
+                            <h3>Faça seu pedido</h3>
+                            <p>Informe o tipo de serviço, data e horários desejados no formulário acima.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="steps__number">2</span>
+                        <div>
+                            <h3>Receba confirmações</h3>
+                            <p>Entraremos em contato para confirmar a disponibilidade e ajustar os detalhes finais.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="steps__number">3</span>
+                        <div>
+                            <h3>Profissionais vão até você</h3>
+                            <p>Equipe pontual, uniformizada e com equipamentos próprios.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="steps__number">4</span>
+                        <div>
+                            <h3>Aproveite o seu tempo</h3>
+                            <p>Relaxe enquanto cuidamos de deixar seu lar impecável.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" id="depoimentos">
+            <div class="container">
+                <h2 class="section__title">Clientes satisfeitos</h2>
+                <div class="testimonials">
+                    <figure class="testimonial">
+                        <blockquote>
+                            "Profissionais super pontuais e cuidadosos. A casa fica um brilho toda semana!"
+                        </blockquote>
+                        <figcaption>— Ana Paula, Vila Mariana</figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <blockquote>
+                            "Contratei a limpeza pós-obra e foi impecável. Nada de poeira e todos os armários limpos."
+                        </blockquote>
+                        <figcaption>— Rodrigo Mendes, Moema</figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <blockquote>
+                            "Excelente atendimento e facilidade para agendar pelo site. Recomendo demais!"
+                        </blockquote>
+                        <figcaption>— Carla Santos, Perdizes</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="contato">
+            <div class="container cta__content">
+                <div>
+                    <h2>Pronto para ter mais tempo livre?</h2>
+                    <p>Fale com a nossa equipe e receba um plano personalizado para sua casa ou escritório.</p>
+                </div>
+                <a class="button button--secondary" href="mailto:contato@casaclara.com">Fale com a gente</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p>&copy; <span id="year"></span> Casa Clara Serviços de Limpeza. Todos os direitos reservados.</p>
+            <div class="footer__links">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
